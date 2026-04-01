@@ -211,32 +211,32 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
 
 /* ── LOGO BAR (replaces cred-strip) ── */
 .logo-bar {
-  background:#fff; border-bottom:1px solid var(--neutral-200);
+  background:var(--primary); border-bottom:1px solid rgba(255,255,255,0.08);
   padding:0 48px;
   display:flex; align-items:center; justify-content:center; gap:0;
   grid-column: 1 / -1;
 }
 .lb-label {
   font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.1em;
-  color:var(--neutral-300); margin-right:44px; white-space:nowrap; flex-shrink:0;
+  color:rgba(255,255,255,0.35); margin-right:44px; white-space:nowrap; flex-shrink:0;
 }
 .lb-items { display:flex; align-items:center; gap:0; flex:1; }
 .lb-item {
-  flex:1; padding:22px 32px; border-right:1px solid var(--neutral-100);
+  flex:1; padding:22px 32px; border-right:1px solid rgba(255,255,255,0.08);
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px;
 }
 .lb-item:last-child { border:none; }
-.lb-logo { font-family:var(--font-display); font-size:16px; font-weight:600; color:var(--neutral-700); letter-spacing:-.01em; }
-.lb-logo.bloomberg { font-family:Georgia, 'Times New Roman', serif; font-size:17px; font-weight:700; color:#0c1b33; }
-.lb-logo.frazier { font-size:14px; color:var(--neutral-600); }
-.lb-sub { font-size:10px; color:var(--neutral-400); font-weight:500; }
+.lb-logo { font-family:var(--font-display); font-size:16px; font-weight:600; color:rgba(255,255,255,0.85); letter-spacing:-.01em; }
+.lb-logo.bloomberg { font-family:Georgia, 'Times New Roman', serif; font-size:17px; font-weight:700; color:#fff; }
+.lb-logo.frazier { font-size:14px; color:rgba(255,255,255,0.75); }
+.lb-sub { font-size:10px; color:rgba(255,255,255,0.45); font-weight:500; }
 .lb-badge {
   display:inline-flex; align-items:center; gap:5px;
-  background:#F0FDF4; border:1px solid #BBF7D0;
+  background:rgba(17,174,114,0.15); border:1px solid rgba(17,174,114,0.3);
   border-radius:4px; padding:4px 10px;
-  font-size:11px; font-weight:600; color:#15803D;
+  font-size:11px; font-weight:600; color:#11AE72;
 }
-.lb-badge-dot { width:6px; height:6px; border-radius:50%; background:#22C55E; }
+.lb-badge-dot { width:6px; height:6px; border-radius:50%; background:#11AE72; }
 
 /* ── SECTIONS ── */
 section { padding:96px 48px; }
