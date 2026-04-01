@@ -13,7 +13,7 @@
 :root {
   --primary:    #0f1623;
   --primary-dk: #080e18;
-  --teal:       #2471f5;
+  --teal:       #00C896;
   --success:    #059669;
   --neutral-50: #F5F7FA;
   --neutral-100:#EEF2F7;
@@ -56,7 +56,7 @@ nav {
 .btn-ghost { padding:10px 20px; font-size:13.5px; font-weight:600; color:var(--neutral-600); border:1.5px solid var(--neutral-300); border-radius:24px; text-decoration:none; background:transparent; transition:border-color .15s, color .15s; }
 .btn-ghost:hover { border-color:var(--neutral-500); color:var(--primary); }
 .btn-primary { padding:10px 22px; font-size:13.5px; font-weight:700; background:transparent; color:var(--teal); border:1.5px solid var(--teal); border-radius:24px; text-decoration:none; cursor:pointer; letter-spacing:.01em; transition:all .15s; }
-.btn-primary:hover { background:rgba(36,113,245,0.06); }
+.btn-primary:hover { background:rgba(0,200,150,0.06); }
 
 /* ── HERO ── */
 .hero {
@@ -68,7 +68,7 @@ nav {
 .hero::before {
   content:''; position:absolute;
   width:800px; height:800px; border-radius:50%;
-  background:radial-gradient(circle, rgba(36,113,245,0.08) 0%, transparent 68%);
+  background:radial-gradient(circle, rgba(0,200,150,0.08) 0%, transparent 68%);
   top:-140px; left:-160px; pointer-events:none;
 }
 .hero::after {
@@ -84,7 +84,7 @@ nav {
 }
 .hero-badge {
   display:inline-flex; align-items:center; gap:8px;
-  background:transparent; border:1.5px solid rgba(36,113,245,0.35);
+  background:transparent; border:1.5px solid rgba(0,200,150,0.35);
   border-radius:100px; padding:9px 20px;
   font-size:13px; font-weight:500; letter-spacing:.01em;
   color:var(--primary); margin-bottom:32px; width:fit-content;
@@ -163,12 +163,12 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
   padding:14px 0; flex-shrink:0;
 }
 .aw-logo-mini { padding:2px 16px 14px; font-family:var(--font-display); font-size:13px; font-weight:600; color:rgba(255,255,255,0.85); }
-.aw-logo-mini span { color:#4A8FFF; }
+.aw-logo-mini span { color:#00C896; }
 .aw-nav-section { padding:0 10px; margin-bottom:4px; }
 .aw-nav-label { font-size:8.5px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; color:rgba(255,255,255,.18); padding:6px 8px 3px; }
 .aw-nav-item { display:flex; align-items:center; gap:7px; padding:6px 8px; border-radius:4px; margin-bottom:1px; font-size:11px; color:rgba(255,255,255,.35); cursor:default; }
-.aw-nav-item.active { background:rgba(36,113,245,0.22); color:#93C5FD; }
-.aw-nav-item.active .ni { color:#4A8FFF; }
+.aw-nav-item.active { background:rgba(0,200,150,0.22); color:#7EFFD4; }
+.aw-nav-item.active .ni { color:#00C896; }
 .ni { font-size:12px; }
 .aw-client-switcher { margin:0 10px 10px; padding:7px 10px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.07); border-radius:5px; }
 .aw-cs-label { font-size:8px; text-transform:uppercase; letter-spacing:.1em; color:rgba(255,255,255,.2); }
@@ -183,7 +183,7 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
 .awkpi { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06); border-radius:5px; padding:10px 8px; }
 .awkpi-v { font-size:15px; font-weight:600; color:#fff; line-height:1; }
 .awkpi-v.g { color:#11AE72; }
-.awkpi-v.b { color:#93C5FD; }
+.awkpi-v.b { color:#7EFFD4; }
 .awkpi-l { font-size:8.5px; font-weight:500; text-transform:uppercase; letter-spacing:.06em; color:rgba(255,255,255,.22); margin-top:4px; }
 .awkpi-delta { font-size:9px; color:#11AE72; margin-top:2px; }
 .aw-two-col { display:grid; grid-template-columns:1.4fr 1fr; gap:8px; margin-bottom:8px; }
@@ -195,7 +195,7 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
 .aw-val { font-family:var(--font-mono); font-size:10px; color:rgba(255,255,255,.65); }
 .aw-val.g { color:#11AE72; }
 .aw-val.r { color:#F87171; }
-.aw-val.b { color:#93C5FD; }
+.aw-val.b { color:#7EFFD4; }
 .aw-chart { display:flex; align-items:flex-end; gap:4px; height:52px; padding-top:4px; }
 .aw-bar-wrap { flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; }
 .aw-bar { width:100%; border-radius:2px 2px 0 0; }
@@ -204,8 +204,8 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
 .aw-sum-text { font-size:10.5px; color:#11AE72; font-weight:600; }
 .aw-sum-val { font-family:var(--font-mono); font-size:11px; color:#11AE72; font-weight:700; }
 .aw-strategies { display:flex; flex-wrap:wrap; gap:4px; }
-.aw-strat { font-size:9px; font-weight:600; padding:3px 8px; border-radius:3px; background:rgba(36,113,245,0.2); color:#93C5FD; border:1px solid rgba(36,113,245,0.3); }
-.aw-strat.active-strat { background:rgba(36,113,245,0.35); color:#BAD4FF; }
+.aw-strat { font-size:9px; font-weight:600; padding:3px 8px; border-radius:3px; background:rgba(0,200,150,0.2); color:#7EFFD4; border:1px solid rgba(0,200,150,0.3); }
+.aw-strat.active-strat { background:rgba(0,200,150,0.35); color:#BAD4FF; }
 .aw-statusbar { background:#060E1A; border-top:1px solid rgba(255,255,255,0.05); padding:5px 14px; display:flex; align-items:center; gap:16px; }
 .aw-sb-item { font-size:9px; color:rgba(255,255,255,.2); display:flex; align-items:center; gap:4px; }
 .aw-sb-dot { width:5px; height:5px; border-radius:50%; background:#11AE72; }
@@ -276,7 +276,7 @@ h2 {
 }
 .feat-visual::before {
   content:''; position:absolute; width:300px; height:300px; border-radius:50%;
-  background:radial-gradient(circle, rgba(36,113,245,0.2) 0%, transparent 70%);
+  background:radial-gradient(circle, rgba(0,200,150,0.2) 0%, transparent 70%);
   top:-80px; right:-80px; pointer-events:none;
 }
 .fv-title { font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; color:rgba(255,255,255,.3); margin-bottom:16px; }
@@ -289,8 +289,8 @@ h2 {
 .fv-bar-fill { height:100%; border-radius:3px; }
 .fv-bar-val { font-family:var(--font-mono); font-size:11px; color:rgba(255,255,255,.65); }
 .fv-pills { display:flex; flex-wrap:wrap; gap:6px; }
-.fv-pill { font-size:10px; font-weight:600; padding:4px 10px; border-radius:4px; background:rgba(36,113,245,0.22); color:#93C5FD; border:1px solid rgba(36,113,245,0.3); }
-.fv-pill.on { background:rgba(36,113,245,0.4); color:#BAD4FF; }
+.fv-pill { font-size:10px; font-weight:600; padding:4px 10px; border-radius:4px; background:rgba(0,200,150,0.22); color:#7EFFD4; border:1px solid rgba(0,200,150,0.3); }
+.fv-pill.on { background:rgba(0,200,150,0.4); color:#BAD4FF; }
 .fv-row-list { display:flex; flex-direction:column; gap:6px; }
 .fv-row { display:flex; justify-content:space-between; align-items:center; padding:7px 0; border-bottom:1px solid rgba(255,255,255,0.05); }
 .fv-row:last-child { border:none; }
@@ -298,14 +298,14 @@ h2 {
 .fv-row-v { font-family:var(--font-mono); font-size:11px; color:rgba(255,255,255,.7); }
 .fv-row-v.g { color:#11AE72; }
 .fv-row-v.r { color:#F87171; }
-.fv-row-v.b { color:#93C5FD; }
+.fv-row-v.b { color:#7EFFD4; }
 
 /* ── COMPARISON ── */
 #comparison { background:var(--white); }
 .comp-wrap { max-width:860px; margin:0 auto; border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-card); border:1px solid var(--neutral-200); }
 .comp-wrap table { width:100%; border-collapse:collapse; }
 .comp-wrap th { padding:14px 18px; text-align:left; font-size:11px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--neutral-400); background:var(--neutral-100); border-bottom:1px solid var(--neutral-200); font-family:var(--font); }
-.comp-wrap th.mob { background:var(--primary); color:#93C5FD; text-align:center; }
+.comp-wrap th.mob { background:var(--primary); color:#7EFFD4; text-align:center; }
 .comp-wrap td { padding:15px 18px; font-size:13.5px; border-bottom:1px solid var(--neutral-100); color:var(--neutral-600); }
 .comp-wrap td:not(:first-child) { text-align:center; }
 .comp-wrap tr:last-child td { border:none; }
@@ -318,7 +318,7 @@ h2 {
 #workflow { background:var(--primary-dk); }
 #workflow h2 { color:#fff; }
 #workflow .s-sub { color:rgba(255,255,255,.45); }
-#workflow .s-eye { color:#93C5FD; }
+#workflow .s-eye { color:#7EFFD4; }
 .wf-row { display:flex; max-width:1060px; margin:0 auto; position:relative; }
 .wf-row::before { content:''; position:absolute; top:28px; left:5%; right:5%; height:1px; background:rgba(255,255,255,.08); }
 .wf-step { flex:1; text-align:center; padding:0 10px; position:relative; z-index:1; }
@@ -433,7 +433,7 @@ footer { background:#07101C; padding:48px 48px 0; }
   <div class="lb-items">
     <div class="lb-item">
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:5px;">
-        <div style="width:32px; height:32px; border-radius:50%; background:rgba(36,113,245,0.18); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <div style="width:32px; height:32px; border-radius:50%; background:rgba(0,200,150,0.18); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
           <span style="font-size:15px;">⚖️</span>
         </div>
         <div style="font-size:14px; font-weight:600; color:#fff; letter-spacing:-.01em;">Trusted by AmLaw 100 &amp; Top 50 CPA Firms</div>
@@ -442,7 +442,7 @@ footer { background:#07101C; padding:48px 48px 0; }
     </div>
     <div class="lb-item">
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:5px;">
-        <div style="width:32px; height:32px; border-radius:50%; background:rgba(36,113,245,0.18); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <div style="width:32px; height:32px; border-radius:50%; background:rgba(0,200,150,0.18); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
           <span style="font-size:15px;">🏆</span>
         </div>
         <div style="font-size:14px; font-weight:600; color:#fff; letter-spacing:-.01em;">Created by a Bloomberg Tax© Author of the Year</div>
@@ -451,12 +451,12 @@ footer { background:#07101C; padding:48px 48px 0; }
     </div>
     <div class="lb-item" style="cursor:pointer;">
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:5px;">
-        <div style="width:32px; height:32px; border-radius:50%; background:rgba(36,113,245,0.18); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+        <div style="width:32px; height:32px; border-radius:50%; background:rgba(0,200,150,0.18); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
           <span style="font-size:15px;">📚</span>
         </div>
         <div style="font-size:14px; font-weight:600; color:#fff; letter-spacing:-.01em;">Check Out David's Publications &amp; Presentations</div>
       </div>
-      <div style="font-size:11px; color:rgba(36,113,245,0.8); padding-left:42px;">Bloomberg Tax Portfolio on Family Offices · QOZ Book · and more →</div>
+      <div style="font-size:11px; color:rgba(0,200,150,0.8); padding-left:42px;">Bloomberg Tax Portfolio on Family Offices · QOZ Book · and more →</div>
     </div>
   </div>
 </div>
@@ -524,7 +524,7 @@ footer { background:#07101C; padding:48px 48px 0; }
       </div>
     </div>
     <div style="text-align:center; margin-bottom:24px; font-size:28px; color:rgba(255,255,255,.3);">↓</div>
-    <div style="max-width:320px; margin:0 auto; background:rgba(36,113,245,0.2); border:1.5px solid rgba(36,113,245,0.5); border-radius:10px; padding:20px 28px; text-align:center;">
+    <div style="max-width:320px; margin:0 auto; background:rgba(0,200,150,0.2); border:1.5px solid rgba(0,200,150,0.5); border-radius:10px; padding:20px 28px; text-align:center;">
       <div style="font-family:var(--font-display); font-size:22px; font-weight:700; color:#fff; margin-bottom:4px;">Mobena</div>
       <div style="font-size:12px; color:rgba(255,255,255,.55);">One model. Complete picture.</div>
     </div>
@@ -556,9 +556,9 @@ footer { background:#07101C; padding:48px 48px 0; }
       <div class="feat-visual">
         <div class="fv-title">Income Tax · Multi-Year Projection</div>
         <div style="display:flex; align-items:flex-end; gap:5px; height:80px; margin-bottom:16px;">
-          <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;"><div style="width:100%; border-radius:2px 2px 0 0; background:rgba(36,113,245,0.5); height:60px;"></div><div style="font-size:8px; color:rgba(255,255,255,.25);">Yr 1</div></div>
-          <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;"><div style="width:100%; border-radius:2px 2px 0 0; background:rgba(36,113,245,0.5); height:52px;"></div><div style="font-size:8px; color:rgba(255,255,255,.25);">Yr 2</div></div>
-          <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;"><div style="width:100%; border-radius:2px 2px 0 0; background:rgba(36,113,245,0.5); height:44px;"></div><div style="font-size:8px; color:rgba(255,255,255,.25);">Yr 3</div></div>
+          <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;"><div style="width:100%; border-radius:2px 2px 0 0; background:rgba(0,200,150,0.5); height:60px;"></div><div style="font-size:8px; color:rgba(255,255,255,.25);">Yr 1</div></div>
+          <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;"><div style="width:100%; border-radius:2px 2px 0 0; background:rgba(0,200,150,0.5); height:52px;"></div><div style="font-size:8px; color:rgba(255,255,255,.25);">Yr 2</div></div>
+          <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;"><div style="width:100%; border-radius:2px 2px 0 0; background:rgba(0,200,150,0.5); height:44px;"></div><div style="font-size:8px; color:rgba(255,255,255,.25);">Yr 3</div></div>
           <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;"><div style="width:100%; border-radius:2px 2px 0 0; background:rgba(17,174,114,0.65); height:34px;"></div><div style="font-size:8px; color:rgba(255,255,255,.25);">Yr 5</div></div>
           <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px;"><div style="width:100%; border-radius:2px 2px 0 0; background:rgba(17,174,114,0.7); height:26px;"></div><div style="font-size:8px; color:rgba(255,255,255,.25);">Yr 10</div></div>
         </div>
@@ -594,7 +594,7 @@ footer { background:#07101C; padding:48px 48px 0; }
           </div>
           <div class="fv-bar-item">
             <div class="fv-bar-name">GRAT</div>
-            <div class="fv-bar-track"><div class="fv-bar-fill" style="width:48%;background:rgba(36,113,245,0.7)"></div></div>
+            <div class="fv-bar-track"><div class="fv-bar-fill" style="width:48%;background:rgba(0,200,150,0.7)"></div></div>
             <div class="fv-bar-val">$5.9M</div>
           </div>
           <div class="fv-bar-item">
@@ -635,7 +635,7 @@ footer { background:#07101C; padding:48px 48px 0; }
       </div>
       <div class="feat-visual">
         <div class="fv-title">AI Model Builder</div>
-        <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(36,113,245,0.25); border-radius:6px; padding:14px; font-size:11.5px; color:rgba(255,255,255,0.6); line-height:1.7; margin-bottom:14px; font-style:italic;">
+        <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(0,200,150,0.25); border-radius:6px; padding:14px; font-size:11.5px; color:rgba(255,255,255,0.6); line-height:1.7; margin-bottom:14px; font-style:italic;">
           "Upload a tax return or personal financial statement and I'll build a complete income and estate model — all entities, trusts, assets, and projected tax liability across every state."
         </div>
         <div class="fv-row-list">
@@ -655,22 +655,22 @@ footer { background:#07101C; padding:48px 48px 0; }
 <section id="founder" style="background:var(--primary-dk); padding:96px 48px;">
   <div style="max-width:960px; margin:0 auto; display:grid; grid-template-columns:1fr 1.4fr; gap:80px; align-items:center;">
     <div>
-      <div class="s-eye" style="color:#93C5FD;">Built by the person who needed it</div>
+      <div class="s-eye" style="color:#7EFFD4;">Built by the person who needed it</div>
       <h2 style="color:#fff; margin-top:10px; margin-bottom:24px;">David went down<br>the rabbit hole.</h2>
       <p style="font-size:16px; color:rgba(255,255,255,.65); line-height:1.78; margin-bottom:20px;">Two years ago, David Rosen — Bloomberg Tax Author of the Year, tax attorney, CPA, and advisor to 500+ ultra-high-net-worth families — sat down to model a single new investment for a family office client. He meant to build a spreadsheet. He emerged several months and many late nights later with a multigenerational planning model.</p>
       <p style="font-size:16px; color:rgba(255,255,255,.65); line-height:1.78; margin-bottom:28px;">Mobena was not built by a software company that stumbled into tax. It was built by a tax expert who wrote the book — literally, the Bloomberg Tax Portfolio on Family Offices — on exactly the strategies the software models.</p>
       <div style="display:flex; flex-direction:column; gap:12px;">
         <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:rgba(255,255,255,.6);">
-          <span style="color:#2471f5; font-size:16px;">✓</span> Bloomberg Tax Author of the Year, 2023
+          <span style="color:#00C896; font-size:16px;">✓</span> Bloomberg Tax Author of the Year, 2023
         </div>
         <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:rgba(255,255,255,.6);">
-          <span style="color:#2471f5; font-size:16px;">✓</span> Author, Bloomberg Tax Portfolio on Family Offices
+          <span style="color:#00C896; font-size:16px;">✓</span> Author, Bloomberg Tax Portfolio on Family Offices
         </div>
         <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:rgba(255,255,255,.6);">
-          <span style="color:#2471f5; font-size:16px;">✓</span> Tax attorney, CPA &amp; family office advisor
+          <span style="color:#00C896; font-size:16px;">✓</span> Tax attorney, CPA &amp; family office advisor
         </div>
         <div style="display:flex; align-items:center; gap:10px; font-size:14px; color:rgba(255,255,255,.6);">
-          <span style="color:#2471f5; font-size:16px;">✓</span> 500+ ultra-high-net-worth families served
+          <span style="color:#00C896; font-size:16px;">✓</span> 500+ ultra-high-net-worth families served
         </div>
       </div>
     </div>
@@ -680,10 +680,10 @@ footer { background:#07101C; padding:48px 48px 0; }
       <div style="border-top:1px solid rgba(255,255,255,.1); padding-top:20px;">
         <div style="font-size:13px; font-weight:600; color:rgba(255,255,255,.7);">What makes Mobena different</div>
         <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
-          <div style="font-size:12.5px; color:rgba(255,255,255,.45); display:flex; gap:8px;"><span style="color:#2471f5;">→</span> Runs actual Form 1040 and 1041 — not estimates</div>
-          <div style="font-size:12.5px; color:rgba(255,255,255,.45); display:flex; gap:8px;"><span style="color:#2471f5;">→</span> Models grantor trusts correctly (most software doesn't)</div>
-          <div style="font-size:12.5px; color:rgba(255,255,255,.45); display:flex; gap:8px;"><span style="color:#2471f5;">→</span> Tiered partnerships, foundations, DAFs — all supported</div>
-          <div style="font-size:12.5px; color:rgba(255,255,255,.45); display:flex; gap:8px;"><span style="color:#2471f5;">→</span> 50+ year multigenerational time horizon</div>
+          <div style="font-size:12.5px; color:rgba(255,255,255,.45); display:flex; gap:8px;"><span style="color:#00C896;">→</span> Runs actual Form 1040 and 1041 — not estimates</div>
+          <div style="font-size:12.5px; color:rgba(255,255,255,.45); display:flex; gap:8px;"><span style="color:#00C896;">→</span> Models grantor trusts correctly (most software doesn't)</div>
+          <div style="font-size:12.5px; color:rgba(255,255,255,.45); display:flex; gap:8px;"><span style="color:#00C896;">→</span> Tiered partnerships, foundations, DAFs — all supported</div>
+          <div style="font-size:12.5px; color:rgba(255,255,255,.45); display:flex; gap:8px;"><span style="color:#00C896;">→</span> 50+ year multigenerational time horizon</div>
         </div>
       </div>
     </div>
