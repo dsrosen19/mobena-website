@@ -62,7 +62,7 @@ nav {
 .hero {
   min-height:100vh; padding-top:96px;
   background:var(--neutral-50);
-  display:grid; grid-template-columns:42fr 58fr;
+  display:flex; flex-direction:column;
   position:relative; overflow:hidden;
 }
 .hero::before {
@@ -79,8 +79,9 @@ nav {
 }
 .hero-left {
   display:flex; flex-direction:column; justify-content:center;
-  padding:80px 80px 80px 48px;
+  padding:60px 48px 40px 48px;
   position:relative; z-index:1;
+  width:100%;
 }
 .hero-badge {
   display:inline-flex; align-items:center; gap:8px;
@@ -119,6 +120,7 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
 .hero-stats-row {
   display:flex; gap:0;
   border-top:1px solid var(--neutral-200); padding-top:32px;
+  max-width:700px;
 }
 .hst { flex:1; padding-right:32px; margin-right:32px; }
 .hst:last-child { padding:0; margin:0; }
@@ -127,16 +129,18 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
 
 /* ── HERO RIGHT — app mockup ── */
 .hero-right {
-  display:flex; align-items:center; justify-content:flex-start;
-  padding:48px 24px 48px 0; position:relative; z-index:1;
+  display:flex; align-items:center; justify-content:center;
+  padding:0 48px 48px; position:relative; z-index:1;
+  width:100%;
 }
 .app-screenshot-wrap {
-  width:100%; max-width:779px; position:relative;
+  width:100%; max-width:620px; position:relative;
   border-radius:12px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.07);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.22), 0 0 0 1px rgba(0,0,0,0.08);
   overflow:hidden;
-  transform:scale(0.97);
-  transform-origin:left center;
+  transform:scale(1);
+  transform-origin:center center;
+  z-index:2;
 }
 .app-screenshot { width:100%; display:block; }
 .app-shell {
