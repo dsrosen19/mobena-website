@@ -393,6 +393,12 @@ footer { background:#07101C; padding:48px 48px 0; }
 .hero-left .hero-cta { animation-delay:.24s; }
 .hero-left .hero-stats-row { animation-delay:.30s; }
 .hero-right { animation:fu .6s .28s ease both; }
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; padding-top: 72px; padding-bottom: 48px; }
+  .hero-right { display: none; }
+  #problem { padding: 64px 24px; }
+  #problem .prob-grid { grid-template-columns: repeat(2,1fr) !important; }
+}
 </style>
 </head>
 <body>
@@ -490,7 +496,7 @@ footer { background:#07101C; padding:48px 48px 0; }
     <p class="s-sub" style="text-align:left; max-width:560px; margin:0; color:rgba(255,255,255,.5);">Four systemic failures that existing software cannot fix — and that cost families millions every year.</p>
   </div>
   <!-- 4-column photo cards -->
-  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px; width:100%;">
+  <div class="prob-grid" style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px; width:100%;">
 
     <!-- Card 1 -->
     <div style="position:relative; background:#111; overflow:hidden; display:flex; flex-direction:column; border-radius:10px;">
