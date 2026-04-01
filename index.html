@@ -62,7 +62,7 @@ nav {
 .hero {
   min-height:100vh; padding-top:96px;
   background:var(--neutral-50);
-  display:flex; flex-direction:column;
+  display:grid; grid-template-columns:42fr 58fr;
   position:relative; overflow:hidden;
 }
 .hero::before {
@@ -79,9 +79,8 @@ nav {
 }
 .hero-left {
   display:flex; flex-direction:column; justify-content:center;
-  padding:60px 48px 40px 48px;
+  padding:80px 80px 80px 48px;
   position:relative; z-index:1;
-  width:100%;
 }
 .hero-badge {
   display:inline-flex; align-items:center; gap:8px;
@@ -120,7 +119,6 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
 .hero-stats-row {
   display:flex; gap:0;
   border-top:1px solid var(--neutral-200); padding-top:32px;
-  max-width:700px;
 }
 .hst { flex:1; padding-right:32px; margin-right:32px; }
 .hst:last-child { padding:0; margin:0; }
@@ -129,18 +127,16 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
 
 /* ── HERO RIGHT — app mockup ── */
 .hero-right {
-  display:flex; align-items:center; justify-content:center;
-  padding:0 48px 48px; position:relative; z-index:1;
-  width:100%;
+  display:flex; align-items:center; justify-content:flex-start;
+  padding:48px 24px 48px 0; position:relative; z-index:1;
 }
 .app-screenshot-wrap {
-  width:100%; max-width:620px; position:relative;
+  width:100%; max-width:779px; position:relative;
   border-radius:12px;
-  box-shadow: 0 24px 64px rgba(0,0,0,0.22), 0 0 0 1px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.07);
   overflow:hidden;
-  transform:scale(1);
-  transform-origin:center center;
-  z-index:2;
+  transform:scale(0.97);
+  transform-origin:left center;
 }
 .app-screenshot { width:100%; display:block; }
 .app-shell {
@@ -487,10 +483,10 @@ footer { background:#07101C; padding:48px 48px 0; }
 
 <!-- PROBLEM SECTION -->
 <section id="problem" style="background:var(--white); padding:96px 5% ; width:100%; box-sizing:border-box;">
-  <div style="width:100%; margin:0 0 60px; text-align:left;">
+  <div style="max-width:100%; margin:0 0 60px; text-align:left;">
     <div class="s-eye">Why Mobena Exists</div>
-    <h2 style="font-size:56px; width:100%; max-width:100%;">Tax planning for the ultra-wealthy is broken.</h2>
-    <p class="s-sub" style="text-align:left; max-width:640px; margin:16px 0 0;">CPAs, estate attorneys, and advisors serving families with $10M–$500M+ in assets are working around four failures that existing software cannot fix.</p>
+    <h2 style="font-size:56px; max-width:720px;">Tax planning for the<br>ultra-wealthy is broken.</h2>
+    <p class="s-sub" style="text-align:left; max-width:580px; margin:0;">CPAs, estate attorneys, and advisors serving families with $10M–$500M+ in assets are working around four failures that existing software cannot fix.</p>
   </div>
   <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:24px; max-width:960px; margin:0 auto;">
     <div style="background:var(--neutral-50); border:1px solid var(--neutral-200); border-radius:var(--radius-md); padding:36px 32px; position:relative; overflow:hidden;">
