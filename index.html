@@ -132,27 +132,33 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
   padding:48px 24px 48px 0; position:relative; z-index:1;
 }
 .app-screenshot-wrap {
-  width:100%; max-width:680px; position:relative;
-  transform:translateX(18px);
+  width:100%; max-width:580px; position:relative;
+  transform:translateX(10px);
   transform-origin:left center;
 }
 .screen-stack {
   position:relative; width:100%;
+  /* tall enough to show all 3 screens with vertical offset */
+  padding-bottom:30%;
 }
 .screen-stack .s-main {
-  width:100%; border-radius:12px;
-  box-shadow: 0 24px 64px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.07);
+  width:72%; border-radius:10px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.07);
   display:block;
+  position:absolute; top:0; right:0; z-index:3;
 }
-.screen-stack .s-float {
-  position:absolute; border-radius:10px;
-  box-shadow: 0 12px 36px rgba(0,0,0,0.22), 0 0 0 1px rgba(0,0,0,0.08);
+.screen-stack .s-mid {
+  width:68%; border-radius:10px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.07);
   display:block;
+  position:absolute; top:18%; left:8%; z-index:2;
 }
-.screen-stack .s-f1 { width:52%; top:-6%; right:-8%; }
-.screen-stack .s-f2 { width:46%; bottom:-8%; right:-6%; }
-.screen-stack .s-f3 { width:40%; bottom:8%; left:-6%; }
-.screen-stack .s-f4 { width:34%; top:10%; left:-5%; }
+.screen-stack .s-back {
+  width:65%; border-radius:10px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.06);
+  display:block;
+  position:absolute; top:38%; right:4%; z-index:1;
+}
 .app-screenshot { width:100%; display:block; }
 .app-shell {
   width:100%; max-width:660px;
@@ -501,11 +507,9 @@ footer { background:#07101C; padding:48px 48px 0; }
   <div class="hero-right">
     <div class="app-screenshot-wrap">
       <div class="screen-stack">
-        <img class="s-main" src="/screen-1.jpg" alt="Mobena Tax Snapshot">
-        <img class="s-float s-f1" src="/screen-2.jpg" alt="Mobena Net Worth">
-        <img class="s-float s-f2" src="/screen-3.jpg" alt="Mobena Monte Carlo">
-        <img class="s-float s-f3" src="/screen-4.jpg" alt="Mobena Configure">
-        <img class="s-float s-f4" src="/screen-5.jpg" alt="Mobena Analysis">
+        <img class="s-main" src="/screen-2.jpg" alt="Mobena Net Worth">
+        <img class="s-mid" src="/screen-3.jpg" alt="Mobena Monte Carlo">
+        <img class="s-back" src="/screen-1.jpg" alt="Mobena Tax Snapshot">
       </div>
     </div>
   </div>
