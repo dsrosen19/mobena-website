@@ -132,32 +132,12 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
   padding:48px 24px 48px 0; position:relative; z-index:1;
 }
 .app-screenshot-wrap {
-  width:100%; max-width:580px; position:relative;
-  transform:translateX(10px);
+  width:100%; max-width:860px; position:relative;
+  border-radius:12px;
+  box-shadow: 0 24px 72px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.07);
+  overflow:hidden;
+  transform:scale(0.97) translateX(18px);
   transform-origin:left center;
-}
-.screen-stack {
-  position:relative; width:100%;
-  /* tall enough to show all 3 screens with vertical offset */
-  padding-bottom:30%;
-}
-.screen-stack .s-main {
-  width:72%; border-radius:10px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.07);
-  display:block;
-  position:absolute; top:0; right:0; z-index:3;
-}
-.screen-stack .s-mid {
-  width:68%; border-radius:10px;
-  box-shadow: 0 16px 40px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.07);
-  display:block;
-  position:absolute; top:18%; left:8%; z-index:2;
-}
-.screen-stack .s-back {
-  width:65%; border-radius:10px;
-  box-shadow: 0 10px 28px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.06);
-  display:block;
-  position:absolute; top:38%; right:4%; z-index:1;
 }
 .app-screenshot { width:100%; display:block; }
 .app-shell {
@@ -506,11 +486,7 @@ footer { background:#07101C; padding:48px 48px 0; }
   </div>
   <div class="hero-right">
     <div class="app-screenshot-wrap">
-      <div class="screen-stack">
-        <img class="s-main" src="/screen-2.jpg" alt="Mobena Net Worth">
-        <img class="s-mid" src="/screen-3.jpg" alt="Mobena Monte Carlo">
-        <img class="s-back" src="/screen-1.jpg" alt="Mobena Tax Snapshot">
-      </div>
+      <img class="app-screenshot" src="/screen-2.jpg" alt="Mobena Net Worth">
     </div>
   </div>
 </div>
