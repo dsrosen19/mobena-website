@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobena — Planning Hub</title>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --navy: #0f1623; --teal: #00C896; --card: #151f30;
+  --border: rgba(0,200,150,0.22); --muted: rgba(255,255,255,0.52);
+  --font: 'Satoshi', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+html { -webkit-font-smoothing: antialiased; }
+body { background: var(--navy); font-family: var(--font); color: #fff; min-height: 100vh; padding: 80px 48px; }
+.header { text-align: center; margin-bottom: 72px; }
+.eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; }
+.title { font-family: var(--font-display); font-size: 40px; font-weight: 600; line-height: 1.12; letter-spacing: -.02em; margin-bottom: 18px; }
+.subtitle { font-size: 16px; color: var(--muted); line-height: 1.7; max-width: 540px; margin: 0 auto; }
+.hub-wrapper { max-width: 1040px; margin: 0 auto; }
+.hub-grid { display: grid; grid-template-columns: 1fr 220px 1fr; gap: 22px; align-items: stretch; }
+.col-left, .col-right { display: flex; flex-direction: column; gap: 22px; }
+.col-center { grid-row: 1/4; display: flex; align-items: center; justify-content: center; }
+.hub-circle { width: 200px; height: 200px; border-radius: 50%; background: #0a1520; border: 1.5px solid var(--teal); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; box-shadow: 0 0 56px rgba(0,200,150,0.18), 0 0 110px rgba(0,200,150,0.07); flex-shrink: 0; }
+.hub-logo { height: 26px; width: auto; }
+.hub-tag { font-size: 9.5px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: var(--teal); opacity: .75; }
+.node { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 22px 26px; display: flex; flex-direction: column; gap: 7px; transition: border-color .2s; }
+.node:hover { border-color: rgba(0,200,150,0.5); }
+.node-label { font-size: 10px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; color: var(--teal); opacity: .85; }
+.node-title { font-family: var(--font-display); font-size: 16px; font-weight: 600; color: #fff; line-height: 1.3; }
+.node-desc { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="eyebrow">The Mobena System</div>
+  <h1 class="title">One Platform.<br>Every Discipline. Every Advisor.</h1>
+  <p class="subtitle">Mobena integrates every area of planning into a single unified model — so advisors always work from the same data.</p>
+</div>
+<div class="hub-wrapper">
+  <div class="hub-grid">
+    <div class="col-left">
+      <div class="node">
+        <div class="node-label">01 — Income Tax Planning</div>
+        <div class="node-title">Form 1040 &amp; 1041 —<br>Calculated, Not Estimated</div>
+        <div class="node-desc">Grantor &amp; non-grantor trusts, tiered partnerships, all 50 states, multi-year projections up to 50 years.</div>
+      </div>
+      <div class="node">
+        <div class="node-label">02 — Estate Tax Planning</div>
+        <div class="node-title">Every Major Strategy,<br>Fully Integrated</div>
+        <div class="node-desc">GRAT, SLAT, IDGT, QPRT, CLAT, FLP &amp; more — with correct income tax treatment at every step.</div>
+      </div>
+      <div class="node">
+        <div class="node-label">03 — Charitable Planning</div>
+        <div class="node-title">DAFs, CLATs, CRTs &amp;<br>Private Foundations</div>
+        <div class="node-desc">Model charitable strategies alongside income and estate tax — see the full picture in one plan.</div>
+      </div>
+    </div>
+    <div class="col-center">
+      <div class="hub-circle">
+        <img class="hub-logo" src="https://mobena-site-zeta.vercel.app/logo.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="Mobena">
+        <span style="display:none; font-family:'Playfair Display',serif; font-size:20px; font-weight:600; color:#fff; letter-spacing:-.01em;">Mobena</span>
+        <div class="hub-tag">Planning Hub</div>
+      </div>
+    </div>
+    <div class="col-right">
+      <div class="node">
+        <div class="node-label">04 — Insurance Planning</div>
+        <div class="node-title">ILITs, Premium Financing<br>&amp; Policy Analysis</div>
+        <div class="node-desc">Integrate life insurance strategies with estate and income tax — model the full after-tax impact.</div>
+      </div>
+      <div class="node">
+        <div class="node-label">05 — Financial Planning</div>
+        <div class="node-title">Investments, Cash Flow<br>&amp; After-Tax Portfolio</div>
+        <div class="node-desc">Real estate, private equity, closely-held businesses — all modeled with correct pass-through treatment.</div>
+      </div>
+      <div class="node">
+        <div class="node-label">06 — Planning Hub</div>
+        <div class="node-title">CPA, Attorney, Advisor<br>&amp; Family — One Model</div>
+        <div class="node-desc">Every advisor and the client work from the same live plan. No silos. No stale spreadsheets.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
