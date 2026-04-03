@@ -128,15 +128,16 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
 
 /* ── HERO RIGHT — app mockup ── */
 .hero-right {
-  display:flex; align-items:center; justify-content:center;
-  padding:48px 24px 48px 0; position:relative; z-index:1;
+  display:flex; align-items:flex-start; justify-content:center;
+  padding:0 24px 0 0; position:relative; z-index:1;
+  margin-top:-60px;
 }
 .app-screenshot-wrap {
   width:100%; max-width:860px; position:relative;
   border-radius:12px;
   box-shadow: 0 24px 72px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.07);
   overflow:hidden;
-  transform:scale(0.97) translateX(18px);
+  transform:scale(0.97) translateX(18px) translateY(-20px);
   transform-origin:left center;
 }
 .app-screenshot { width:100%; display:block; }
