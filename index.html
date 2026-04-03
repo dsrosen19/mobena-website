@@ -132,28 +132,12 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
   padding:48px 24px 48px 0; position:relative; z-index:1;
 }
 .app-screenshot-wrap {
-  width:100%; max-width:560px; position:relative;
-  transform:translateX(8px);
+  width:100%; max-width:860px; position:relative;
+  border-radius:12px;
+  box-shadow: 0 24px 72px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.07);
+  overflow:hidden;
+  transform:scale(0.97) translateX(18px);
   transform-origin:left center;
-}
-.screen-stack-v {
-  position:relative;
-  /* tall container so second screen shows below */
-  padding-bottom:46%;
-}
-.screen-stack-v .sv-top {
-  position:absolute;
-  width:88%; right:0; top:0;
-  border-radius:10px;
-  box-shadow: 0 16px 48px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.07);
-  display:block; z-index:2;
-}
-.screen-stack-v .sv-bot {
-  position:absolute;
-  width:88%; left:0; top:22%;
-  border-radius:10px;
-  box-shadow: 0 20px 56px rgba(0,0,0,0.20), 0 0 0 1px rgba(0,0,0,0.08);
-  display:block; z-index:3;
 }
 .app-screenshot { width:100%; display:block; }
 .app-shell {
@@ -502,10 +486,7 @@ footer { background:#07101C; padding:48px 48px 0; }
   </div>
   <div class="hero-right">
     <div class="app-screenshot-wrap">
-      <div class="screen-stack-v">
-        <img class="sv-top" src="/screen-4.jpg" alt="Mobena Dashboard">
-        <img class="sv-bot" src="/screen-1.jpg" alt="Mobena Tax Snapshot">
-      </div>
+      <img class="app-screenshot" src="/screen-3.jpg" alt="Mobena Monte Carlo Analysis">
     </div>
   </div>
 </div>
