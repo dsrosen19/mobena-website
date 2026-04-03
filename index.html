@@ -374,8 +374,29 @@ h2 {
 .cta-q-name { font-size:14px; font-weight:600; color:var(--primary); }
 .cta-q-role { font-size:12px; color:var(--neutral-400); margin-top:1px; }
 .cta-outcome {
-  display:flex; gap:24px; padding:20px 0; border-top:1px solid var(--neutral-200);
+  display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:28px;
 }
+.cta-ba-col {
+  padding:16px 18px; border-radius:10px;
+}
+.cta-ba-col.before {
+  background:#f5f5f5; border:1px solid rgba(0,0,0,0.08);
+}
+.cta-ba-col.after {
+  background:#0f1623; border:1px solid rgba(0,200,150,0.25);
+}
+.cta-ba-label {
+  font-size:9px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; margin-bottom:10px;
+}
+.cta-ba-col.before .cta-ba-label { color:var(--neutral-500); }
+.cta-ba-col.after .cta-ba-label { color:#00C896; }
+.cta-ba-row { display:flex; align-items:baseline; gap:8px; margin-bottom:6px; }
+.cta-ba-bullet { width:5px; height:5px; border-radius:50%; flex-shrink:0; margin-bottom:2px; }
+.cta-ba-col.before .cta-ba-bullet { background:var(--neutral-400); }
+.cta-ba-col.after .cta-ba-bullet { background:#00C896; }
+.cta-ba-text { font-size:12px; line-height:1.5; }
+.cta-ba-col.before .cta-ba-text { color:var(--neutral-500); }
+.cta-ba-col.after .cta-ba-text { color:rgba(255,255,255,0.75); }
 .cta-out-item { flex:1; }
 .cta-out-val { font-family:var(--font-display); font-size:28px; font-weight:600; color:var(--primary); letter-spacing:-.02em; }
 .cta-out-lbl { font-size:11px; color:var(--neutral-500); margin-top:3px; line-height:1.4; }
@@ -909,17 +930,19 @@ footer { background:#07101C; padding:48px 48px 0; }
 
     <!-- Outcome numbers directly below the quote -->
     <div class="cta-outcome">
-      <div class="cta-out-item">
-        <div class="cta-out-val">8.5 hrs</div>
-        <div class="cta-out-lbl">saved per engagement</div>
+      <div class="cta-ba-col before">
+        <div class="cta-ba-label">Before Mobena</div>
+        <div class="cta-ba-row"><div class="cta-ba-bullet"></div><div class="cta-ba-text">8–12 hrs to build one scenario</div></div>
+        <div class="cta-ba-row"><div class="cta-ba-bullet"></div><div class="cta-ba-text">Dozens of disconnected Excel tabs</div></div>
+        <div class="cta-ba-row"><div class="cta-ba-bullet"></div><div class="cta-ba-text">Manual re-entry across estate &amp; income</div></div>
+        <div class="cta-ba-row"><div class="cta-ba-bullet"></div><div class="cta-ba-text">No cross-discipline visibility</div></div>
       </div>
-      <div class="cta-out-item">
-        <div class="cta-out-val">$9.2M</div>
-        <div class="cta-out-lbl">tax saved, one family</div>
-      </div>
-      <div class="cta-out-item">
-        <div class="cta-out-val">1 Model</div>
-        <div class="cta-out-lbl">Excel tabs consolidated</div>
+      <div class="cta-ba-col after">
+        <div class="cta-ba-label">With Mobena</div>
+        <div class="cta-ba-row"><div class="cta-ba-bullet"></div><div class="cta-ba-text">Full model built in under 10 minutes</div></div>
+        <div class="cta-ba-row"><div class="cta-ba-bullet"></div><div class="cta-ba-text">One unified platform, all disciplines</div></div>
+        <div class="cta-ba-row"><div class="cta-ba-bullet"></div><div class="cta-ba-text">Live tax &amp; estate impact, side by side</div></div>
+        <div class="cta-ba-row"><div class="cta-ba-bullet"></div><div class="cta-ba-text">Client-ready output in one click</div></div>
       </div>
     </div>
   </div>
