@@ -106,7 +106,7 @@ h1 em { font-style:normal; color:var(--teal); font-weight:600; }
 }
 .hero-cta { display:flex; gap:14px; align-items:center; margin-bottom:28px; }
 .btn-lg-primary {
-  padding:13px 40px; font-size:15px; font-weight:600; white-space:nowrap;
+  padding:13px 72px; font-size:15px; font-weight:600;
   background:var(--primary); color:#fff; border:none; border-radius:var(--radius-sm);
   text-decoration:none; cursor:pointer; font-family:var(--font);
 }
@@ -497,50 +497,26 @@ footer { background:#07101C; padding:48px 48px 0; }
       </div>
       <!-- ── PLANNING WHEEL ── -->
       <div style="display:flex; justify-content:center; width:100%; padding-top:32px;">
-        <svg viewBox="-190 -190 380 380" width="340" height="340" style="display:block; overflow:visible; max-width:100%;">
+        <svg viewBox="-220 -220 440 440" width="480" height="480" style="display:block; overflow:visible;">
           <defs>
             <filter id="wshadow" x="-20%" y="-20%" width="140%" height="140%">
-              <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="rgba(0,0,0,0.18)"/>
+              <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="rgba(0,0,0,0.15)"/>
             </filter>
           </defs>
-          <!-- Wedge 1: Income Tax Planning (top, 270°→30°) teal -->
-          <path d="M0,0 L0,-155 A155,155 0 0,1 134.235,77.5 Z" fill="#00C896"/>
-          <!-- Wedge 2: Estate Planning (bottom-right, 30°→150°) dark navy -->
-          <path d="M0,0 L134.235,77.5 A155,155 0 0,1 -134.235,77.5 Z" fill="#0f1623"/>
-          <!-- Wedge 3: Financial Planning (bottom-left, 150°→270°) mid navy -->
-          <path d="M0,0 L-134.235,77.5 A155,155 0 0,1 0,-155 Z" fill="#1a3348"/>
-          <!-- White gap lines -->
-          <line x1="0" y1="0" x2="0" y2="-160" stroke="white" stroke-width="3" opacity="0.7"/>
-          <line x1="0" y1="0" x2="138.6" y2="80" stroke="white" stroke-width="3" opacity="0.7"/>
-          <line x1="0" y1="0" x2="-138.6" y2="80" stroke="white" stroke-width="3" opacity="0.7"/>
-          <!-- Center circle with teal bg -->
-          <circle cx="0" cy="0" r="58" fill="#00C896" filter="url(#wshadow)"/>
-          <!-- Mobena logo text (white on teal) — actual wordmark rendered as SVG text matching logo style -->
-          <text x="0" y="-4" text-anchor="middle" dominant-baseline="middle"
-            font-family="'Playfair Display', Georgia, serif"
-            font-size="26" font-weight="700" fill="white" letter-spacing="-0.5">mobena</text>
-          <!-- Wedge labels — positioned at centroid of each wedge at r=100 -->
-          <!-- W1 centroid: angle=330°, r=100 → (86.6, -50) -->
-          <text x="70" y="-55" text-anchor="middle"
-            font-family="'Playfair Display', Georgia, serif"
-            font-size="12" font-weight="600" fill="white">Income Tax</text>
-          <text x="70" y="-40" text-anchor="middle"
-            font-family="'Satoshi', 'Inter', sans-serif"
-            font-size="10" font-weight="500" fill="rgba(255,255,255,0.85)">Planning</text>
-          <!-- W2 centroid: angle=90°, r=100 → (0, 100) -->
-          <text x="82" y="108" text-anchor="middle"
-            font-family="'Playfair Display', Georgia, serif"
-            font-size="12" font-weight="600" fill="white">Estate</text>
-          <text x="82" y="122" text-anchor="middle"
-            font-family="'Satoshi', 'Inter', sans-serif"
-            font-size="10" font-weight="500" fill="rgba(255,255,255,0.85)">Planning</text>
-          <!-- W3 centroid: angle=210°, r=100 → (-86.6, -50) -->
-          <text x="-82" y="108" text-anchor="middle"
-            font-family="'Playfair Display', Georgia, serif"
-            font-size="12" font-weight="600" fill="white">Financial</text>
-          <text x="-82" y="122" text-anchor="middle"
-            font-family="'Satoshi', 'Inter', sans-serif"
-            font-size="10" font-weight="500" fill="rgba(255,255,255,0.85)">Planning</text>
+          <path d="M0,0 L0,-180 A180,180 0 0,1 155.885,90 Z" fill="#00C896" opacity="0.93" filter="url(#wshadow)"/>
+          <path d="M0,0 L155.885,90 A180,180 0 0,1 -155.885,90 Z" fill="#0f1623" opacity="0.92" filter="url(#wshadow)"/>
+          <path d="M0,0 L-155.885,90 A180,180 0 0,1 0,-180 Z" fill="#1e3a52" opacity="0.92" filter="url(#wshadow)"/>
+          <line x1="0" y1="0" x2="0" y2="-186" stroke="white" stroke-width="2.5" opacity="0.5"/>
+          <line x1="0" y1="0" x2="161" y2="93" stroke="white" stroke-width="2.5" opacity="0.5"/>
+          <line x1="0" y1="0" x2="-161" y2="93" stroke="white" stroke-width="2.5" opacity="0.5"/>
+          <circle cx="0" cy="0" r="72" fill="white" filter="url(#wshadow)"/>
+          <image href="/logo-square.svg" x="-48" y="-48" width="96" height="96" preserveAspectRatio="xMidYMid meet"/>
+          <text x="0" y="-128" text-anchor="middle" font-family="'Satoshi','Inter',sans-serif" font-size="13" font-weight="700" fill="white">INCOME TAX</text>
+          <text x="0" y="-111" text-anchor="middle" font-family="'Satoshi','Inter',sans-serif" font-size="11" font-weight="500" fill="rgba(255,255,255,0.88)">PLANNING</text>
+          <text x="82" y="108" text-anchor="middle" font-family="'Satoshi','Inter',sans-serif" font-size="13" font-weight="700" fill="white">ESTATE</text>
+          <text x="82" y="125" text-anchor="middle" font-family="'Satoshi','Inter',sans-serif" font-size="11" font-weight="500" fill="rgba(255,255,255,0.88)">PLANNING</text>
+          <text x="-82" y="108" text-anchor="middle" font-family="'Satoshi','Inter',sans-serif" font-size="13" font-weight="700" fill="white">FINANCIAL</text>
+          <text x="-82" y="125" text-anchor="middle" font-family="'Satoshi','Inter',sans-serif" font-size="11" font-weight="500" fill="rgba(255,255,255,0.88)">PLANNING</text>
         </svg>
       </div>
       <!-- ── END PLANNING WHEEL ── -->
