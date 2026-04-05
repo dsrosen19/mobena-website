@@ -503,38 +503,36 @@ footer { background:#07101C; padding:48px 48px 0; }
               <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="rgba(0,0,0,0.15)"/>
             </filter>
           </defs>
-          <!-- Wedges -->
           <path d="M0,0 L0,-180 A180,180 0 0,1 155.885,90 Z" fill="#00C896" opacity="0.93" filter="url(#wshadow)"/>
           <path d="M0,0 L155.885,90 A180,180 0 0,1 -155.885,90 Z" fill="#0f1623" opacity="0.92" filter="url(#wshadow)"/>
           <path d="M0,0 L-155.885,90 A180,180 0 0,1 0,-180 Z" fill="#1e3a52" opacity="0.92" filter="url(#wshadow)"/>
-          <!-- Separators -->
           <line x1="0" y1="0" x2="0" y2="-186" stroke="white" stroke-width="3" opacity="0.6"/>
           <line x1="0" y1="0" x2="161" y2="93" stroke="white" stroke-width="3" opacity="0.6"/>
           <line x1="0" y1="0" x2="-161" y2="93" stroke="white" stroke-width="3" opacity="0.6"/>
-          <!-- Center: teal circle + square logo (white on transparent renders on teal bg) -->
+          <!-- Center: teal circle + logo -->
           <circle cx="0" cy="0" r="72" fill="#00C896" filter="url(#wshadow)"/>
           <image href="/logo-square.svg" x="-52" y="-52" width="104" height="104" preserveAspectRatio="xMidYMid meet"/>
-          <!-- Label: Income Tax Planning — top wedge centroid ~(0, -118) -->
-          <text x="0" y="-120" text-anchor="middle"
-            font-family="'Playfair Display', Georgia, serif"
-            font-size="15" font-weight="600" fill="white">Income Tax</text>
-          <text x="0" y="-102" text-anchor="middle"
-            font-family="'Satoshi', 'Inter', sans-serif"
-            font-size="12" font-weight="500" fill="rgba(255,255,255,0.88)">Planning</text>
-          <!-- Label: Estate Planning — bottom-right centroid ~(102, 59) -->
-          <text x="102" y="62" text-anchor="middle"
-            font-family="'Playfair Display', Georgia, serif"
-            font-size="15" font-weight="600" fill="white">Estate</text>
-          <text x="102" y="80" text-anchor="middle"
-            font-family="'Satoshi', 'Inter', sans-serif"
-            font-size="12" font-weight="500" fill="rgba(255,255,255,0.88)">Planning</text>
-          <!-- Label: Financial Planning — bottom-left centroid ~(-102, 59) -->
-          <text x="-102" y="62" text-anchor="middle"
-            font-family="'Playfair Display', Georgia, serif"
-            font-size="15" font-weight="600" fill="white">Financial</text>
-          <text x="-102" y="80" text-anchor="middle"
-            font-family="'Satoshi', 'Inter', sans-serif"
-            font-size="12" font-weight="500" fill="rgba(255,255,255,0.88)">Planning</text>
+          <!-- W1: Income Tax Planning — top-right teal wedge, centroid angle=330°, r=115 -->
+          <text x="100" y="-51" text-anchor="middle"
+            font-family="'Satoshi','Inter',sans-serif"
+            font-size="13" font-weight="700" fill="white" letter-spacing="0.08em">INCOME TAX</text>
+          <text x="100" y="-35" text-anchor="middle"
+            font-family="'Satoshi','Inter',sans-serif"
+            font-size="13" font-weight="700" fill="white" letter-spacing="0.08em">PLANNING</text>
+          <!-- W2: Estate Planning — bottom wedge, centroid angle=90°, r=108 -->
+          <text x="0" y="100" text-anchor="middle"
+            font-family="'Satoshi','Inter',sans-serif"
+            font-size="13" font-weight="700" fill="white" letter-spacing="0.08em">ESTATE</text>
+          <text x="0" y="116" text-anchor="middle"
+            font-family="'Satoshi','Inter',sans-serif"
+            font-size="13" font-weight="700" fill="white" letter-spacing="0.08em">PLANNING</text>
+          <!-- W3: Financial Planning — left wedge, centroid angle=210°, r=115 -->
+          <text x="-100" y="-51" text-anchor="middle"
+            font-family="'Satoshi','Inter',sans-serif"
+            font-size="13" font-weight="700" fill="white" letter-spacing="0.08em">FINANCIAL</text>
+          <text x="-100" y="-35" text-anchor="middle"
+            font-family="'Satoshi','Inter',sans-serif"
+            font-size="13" font-weight="700" fill="white" letter-spacing="0.08em">PLANNING</text>
         </svg>
       </div>
       <!-- ── END PLANNING WHEEL ── -->
